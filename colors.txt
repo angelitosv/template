@@ -1,0 +1,10 @@
+Colores:
+
+Rojo:
+#A32429
+
+Azul oscuro:
+#2D417D
+
+Celeste:
+#54A5CF
