@@ -1,6 +1,16 @@
 @font-face {
-    font-family: fontSiteDefaul;
-    src: url("../fonts/OpenSans-Regular.ttf");
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Semibold.ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Semibold.ttf");
+    font-weight: 600;
+    font-style: normal;
+    font-weight: bold;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap");
@@ -10,7 +20,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: fontSiteDefaul, Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: "Open Sans", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 body {
@@ -77,9 +87,9 @@ body {
 .socialink {
     display: block;
     text-align: center;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     margin: 0 5px;
     color: white;
 }
@@ -168,4 +178,68 @@ body {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(7, 5, 5, 0.2);
+}
+
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    z-index: 1;
+    right: 0;
+    margin-right: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    font-size: 0.9em;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #eef0f2;
+    color: #a32429;
+}
+
+.dropdown-content a:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dropdown-content a:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #eef0f2;
+    border-radius: 8px;
+    color: #a32429;
+    transition: color 1s, background-color 1s;
 }
