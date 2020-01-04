@@ -36,6 +36,7 @@ body {
 .sidebar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 180px;
     height: 100%;
     background-color: #1d365b;
@@ -64,6 +65,7 @@ body {
 }
 
 .menulink {
+    margin-left: 15px;
     color: #bdb8d7;
     display: block;
 }
