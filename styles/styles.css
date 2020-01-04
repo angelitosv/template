@@ -1,17 +1,26 @@
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Semibold.ttf");
+    src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url("../fonts/OpenSans-Semibold.ttf");
+    src: url("../fonts/OpenSans-Semibold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
     font-weight: bold;
 }
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-weight: lighter;
+}
+
 
 @import url("https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap");
 * {
@@ -26,11 +35,13 @@
 body {
     background-color: #e3e6ea;
     padding-top: 60px;
+    width: 100%;
 }
 
 .container {
     display: flex;
     position: relative;
+    width: 100%;
 }
 
 .sidebar {
@@ -55,6 +66,7 @@ body {
 }
 
 .menuitem {
+    font-weight: bold;
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -103,7 +115,7 @@ body {
 }
 
 .main {
-    width: 100%;
+    width: 90%;
     margin-left: 180px;
     position: relative;
 }
@@ -144,6 +156,7 @@ body {
 }
 
 .toolbarlink {
+    font-weight: lighter;
     font-size: 0.9em;
     color: black;
     margin: 5px;
@@ -182,6 +195,40 @@ body {
     box-shadow: 0 1px 3px rgba(7, 5, 5, 0.2);
 }
 
+.table_data {
+    width: 100%;
+    border: 1px solid rgba(7, 5, 5, 0.2);
+    border-collapse: collapse;
+    font-size: .8em;
+}
+
+.table_head {
+    background-color: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+    border: 1px solid rgba(7, 5, 5, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+
+.table_row {
+    padding: 10px;
+    border: 1px solid rgba(7, 5, 5, 0.2);
+    font-weight: lighter;
+}
+
+.table_row:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.3);
+}
+
+.table_item {
+    padding: 10px;
+    border: 1px solid rgba(7, 5, 5, 0.2);
+}
+
+.imginfo {
+    border: 10px solid #f0b9a6;
+}
+
 .dropbtn {
     font-size: 0.9em;
     font-weight: bold;
@@ -198,6 +245,7 @@ body {
 }
 
 .dropdown-content {
+    font-weight: lighter;
     display: none;
     position: absolute;
     background-color: white;

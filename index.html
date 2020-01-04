@@ -7,6 +7,7 @@
     <title>Principal</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/Chart.min.css">
     <link href="styles/fontawesome/css/all.css" rel="stylesheet" />
 </head>
 
@@ -43,7 +44,7 @@
                 <a class="socialink" href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
             <div class="header">
                 <h3 class="header_title">Bienvenidos al Sitio Web!</h3>
                 <div class="toolbar_container">
@@ -59,7 +60,6 @@
                                     <a href="#"><i class="fxs fas fa-sign-out-alt"></i>Cerrar Sesión</a>
                                 </div>
                             </div>
-                            <!-- <a class="toolbarlink" href="#"><i class="fxs fas fa-user-circle"></i>Angel Guevara</a> -->
                         </li>
                     </ul>
                 </div>
@@ -71,56 +71,63 @@
                     soluta iure excepturi esse autem. Id, itaque reprehenderit illum dignissimos in quam modi iusto neque eveniet, placeat cumque accusamus unde sunt, atque accusantium eaque natus. Ipsum eaque nulla expedita atque quia eum, nobis incidunt
                     dolore itaque sunt a enim. Non animi, ut repellendus dicta iste illo debitis tempore cum reiciendis magni, laudantium earum explicabo soluta suscipit voluptates quae facilis necessitatibus vero ea nostrum itaque, doloremque vitae hic
                     laboriosam. Deleniti repudiandae voluptates ab, perspiciatis explicabo labore fugiat veniam pariatur nisi, perferendis ut, dolores enim non saepe obcaecati! Ab odio suscipit delectus id iure quibusdam, aut sed quia ullam veniam nisi?
-                    Eveniet explicabo non esse neque modi dolor quasi distinctio saepe. Ex, omnis ea qui fugit, voluptate minima reprehenderit eveniet non, perspiciatis sint sit? Ullam autem iste quo quam voluptatibus, commodi quas velit quaerat magni
-                    facere ea excepturi eaque veniam, tempora officia nihil eveniet ex minus nostrum? Rem exercitationem optio quidem harum. Tempora provident adipisci illum corporis animi assumenda inventore consequuntur voluptates modi architecto non
-                    tempore tenetur nostrum aliquam necessitatibus, quo error quisquam eaque omnis odit ea. Tenetur ab quod voluptate sed aliquam quasi sapiente molestias eligendi ut distinctio suscipit architecto maxime beatae vitae, possimus explicabo
-                    asperiores officia accusantium unde iure harum reiciendis atque quidem. Iste eveniet deserunt odit a, nam ratione perspiciatis tempora modi illum, esse, sequi amet odio vero obcaecati reiciendis impedit quis ab? Consequatur aliquam
-                    modi ratione, expedita voluptas beatae, qui amet aliquid explicabo exercitationem officia eius!
+                    Eveniet explicabo non esse neque modi dolor quasi distinctio saepe.
                 </div>
 
                 <div class="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae officiis doloremque asperiores et nostrum perferendis sunt facere dolore blanditiis, sint praesentium voluptatum, quod vero hic recusandae perspiciatis ut ducimus illum reprehenderit
-                    tenetur pariatur dicta repellat unde. Dolor sit deserunt voluptatibus atque eos assumenda numquam rerum dolorem, provident, a cumque quisquam blanditiis cupiditate reiciendis, veniam velit totam corporis eum. Distinctio nostrum sequi
-                    soluta iure excepturi esse autem. Id, itaque reprehenderit illum dignissimos in quam modi iusto neque eveniet, placeat cumque accusamus unde sunt, atque accusantium eaque natus. Ipsum eaque nulla expedita atque quia eum, nobis incidunt
-                    dolore itaque sunt a enim. Non animi, ut repellendus dicta iste illo debitis tempore cum reiciendis magni, laudantium earum explicabo soluta suscipit voluptates quae facilis necessitatibus vero ea nostrum itaque, doloremque vitae hic
-                    laboriosam. Deleniti repudiandae voluptates ab, perspiciatis explicabo labore fugiat veniam pariatur nisi, perferendis ut, dolores enim non saepe obcaecati! Ab odio suscipit delectus id iure quibusdam, aut sed quia ullam veniam nisi?
-                    Eveniet explicabo non esse neque modi dolor quasi distinctio saepe. Ex, omnis ea qui fugit, voluptate minima reprehenderit eveniet non, perspiciatis sint sit? Ullam autem iste quo quam voluptatibus, commodi quas velit quaerat magni
-                    facere ea excepturi eaque veniam, tempora officia nihil eveniet ex minus nostrum? Rem exercitationem optio quidem harum. Tempora provident adipisci illum corporis animi assumenda inventore consequuntur voluptates modi architecto non
-                    tempore tenetur nostrum aliquam necessitatibus, quo error quisquam eaque omnis odit ea. Tenetur ab quod voluptate sed aliquam quasi sapiente molestias eligendi ut distinctio suscipit architecto maxime beatae vitae, possimus explicabo
-                    asperiores officia accusantium unde iure harum reiciendis atque quidem. Iste eveniet deserunt odit a, nam ratione perspiciatis tempora modi illum, esse, sequi amet odio vero obcaecati reiciendis impedit quis ab? Consequatur aliquam
-                    modi ratione, expedita voluptas beatae, qui amet aliquid explicabo exercitationem officia eius!
+                    <table class="table_data">
+                        <thead>
+                            <th class="table_head">Código</th>
+                            <th class="table_head">Nombres</th>
+                            <th class="table_head">Apellidos</th>
+                            <th class="table_head">Departamento</th>
+                        </thead>
+                        <tbody>
+                            <tr class="table_row">
+                                <td class="table_item">1032</td>
+                                <td class="table_item">Angel Antonio</td>
+                                <td class="table_item">Guevara Palma</td>
+                                <td class="table_item">Informática</td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="table_item">1033</td>
+                                <td class="table_item">Zulma Lisseth</td>
+                                <td class="table_item">Duanes Montoya</td>
+                                <td class="table_item">Reccursos Humanos</td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="table_item">1034</td>
+                                <td class="table_item">Camila Eunice</td>
+                                <td class="table_item">Guevara Duanes</td>
+                                <td class="table_item">Mercadeo</td>
+                            </tr>
+                            <tr class="table_row">
+                                <td class="table_item">1035</td>
+                                <td class="table_item">Tito Angel</td>
+                                <td class="table_item">Guevara Cruz</td>
+                                <td class="table_item">Mercadeo</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae officiis doloremque asperiores et nostrum perferendis sunt facere dolore blanditiis, sint praesentium voluptatum, quod vero hic recusandae perspiciatis ut ducimus illum reprehenderit
-                    tenetur pariatur dicta repellat unde. Dolor sit deserunt voluptatibus atque eos assumenda numquam rerum dolorem, provident, a cumque quisquam blanditiis cupiditate reiciendis, veniam velit totam corporis eum. Distinctio nostrum sequi
-                    soluta iure excepturi esse autem. Id, itaque reprehenderit illum dignissimos in quam modi iusto neque eveniet, placeat cumque accusamus unde sunt, atque accusantium eaque natus. Ipsum eaque nulla expedita atque quia eum, nobis incidunt
-                    dolore itaque sunt a enim. Non animi, ut repellendus dicta iste illo debitis tempore cum reiciendis magni, laudantium earum explicabo soluta suscipit voluptates quae facilis necessitatibus vero ea nostrum itaque, doloremque vitae hic
-                    laboriosam. Deleniti repudiandae voluptates ab, perspiciatis explicabo labore fugiat veniam pariatur nisi, perferendis ut, dolores enim non saepe obcaecati! Ab odio suscipit delectus id iure quibusdam, aut sed quia ullam veniam nisi?
-                    Eveniet explicabo non esse neque modi dolor quasi distinctio saepe. Ex, omnis ea qui fugit, voluptate minima reprehenderit eveniet non, perspiciatis sint sit? Ullam autem iste quo quam voluptatibus, commodi quas velit quaerat magni
-                    facere ea excepturi eaque veniam, tempora officia nihil eveniet ex minus nostrum? Rem exercitationem optio quidem harum. Tempora provident adipisci illum corporis animi assumenda inventore consequuntur voluptates modi architecto non
-                    tempore tenetur nostrum aliquam necessitatibus, quo error quisquam eaque omnis odit ea. Tenetur ab quod voluptate sed aliquam quasi sapiente molestias eligendi ut distinctio suscipit architecto maxime beatae vitae, possimus explicabo
-                    asperiores officia accusantium unde iure harum reiciendis atque quidem. Iste eveniet deserunt odit a, nam ratione perspiciatis tempora modi illum, esse, sequi amet odio vero obcaecati reiciendis impedit quis ab? Consequatur aliquam
-                    modi ratione, expedita voluptas beatae, qui amet aliquid explicabo exercitationem officia eius!
+                    <canvas id="myChart" width="400" height="200"></canvas>
                 </div>
 
                 <div class="info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae officiis doloremque asperiores et nostrum perferendis sunt facere dolore blanditiis, sint praesentium voluptatum, quod vero hic recusandae perspiciatis ut ducimus illum reprehenderit
-                    tenetur pariatur dicta repellat unde. Dolor sit deserunt voluptatibus atque eos assumenda numquam rerum dolorem, provident, a cumque quisquam blanditiis cupiditate reiciendis, veniam velit totam corporis eum. Distinctio nostrum sequi
-                    soluta iure excepturi esse autem. Id, itaque reprehenderit illum dignissimos in quam modi iusto neque eveniet, placeat cumque accusamus unde sunt, atque accusantium eaque natus. Ipsum eaque nulla expedita atque quia eum, nobis incidunt
-                    dolore itaque sunt a enim. Non animi, ut repellendus dicta iste illo debitis tempore cum reiciendis magni, laudantium earum explicabo soluta suscipit voluptates quae facilis necessitatibus vero ea nostrum itaque, doloremque vitae hic
-                    laboriosam. Deleniti repudiandae voluptates ab, perspiciatis explicabo labore fugiat veniam pariatur nisi, perferendis ut, dolores enim non saepe obcaecati! Ab odio suscipit delectus id iure quibusdam, aut sed quia ullam veniam nisi?
-                    Eveniet explicabo non esse neque modi dolor quasi distinctio saepe. Ex, omnis ea qui fugit, voluptate minima reprehenderit eveniet non, perspiciatis sint sit? Ullam autem iste quo quam voluptatibus, commodi quas velit quaerat magni
-                    facere ea excepturi eaque veniam, tempora officia nihil eveniet ex minus nostrum? Rem exercitationem optio quidem harum. Tempora provident adipisci illum corporis animi assumenda inventore consequuntur voluptates modi architecto non
-                    tempore tenetur nostrum aliquam necessitatibus, quo error quisquam eaque omnis odit ea. Tenetur ab quod voluptate sed aliquam quasi sapiente molestias eligendi ut distinctio suscipit architecto maxime beatae vitae, possimus explicabo
-                    asperiores officia accusantium unde iure harum reiciendis atque quidem. Iste eveniet deserunt odit a, nam ratione perspiciatis tempora modi illum, esse, sequi amet odio vero obcaecati reiciendis impedit quis ab? Consequatur aliquam
-                    modi ratione, expedita voluptas beatae, qui amet aliquid explicabo exercitationem officia eius!
+                    <img class="imginfo" src="images/paisaje.jpg" alt="paisaje">
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/Chart.min.js"></script>
     <script src="styles/fontawesome/js/all.js"></script>
-    <script src="js/functions.js"></script>
+    <script>getChart()</script>
+
 </body>
 
 </html>
