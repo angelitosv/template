@@ -65,7 +65,31 @@
                 </div>
             </div>
             <div class="content">
-                <div class="info">
+                <div class="tribox">
+                    <div class="trio">
+                        <div class="sidevalues">
+                            <div class="minititle">Ingreso</div>
+                            <div class="minivalue">$14,567.89</div>
+                        </div>
+                        <div class="minigraph"><img src="images/bar-chart.png" alt="grafico"></div>
+                    </div>
+                    <div class="trio">
+                        <div class="mini_icon miniback-1"><i class="fas fa-newspaper"></i></div>
+                        <div class="mini_info">
+                            <div class="mini_count">120</div>
+                            <div class="mini_messa">Total Requisiciones</div>  
+                        </div>   
+                    </div>
+                    <div class="trio">
+                        <div class="mini_icon miniback-2"><i class="fas fa-bus-alt"></i></div>
+                        <div class="mini_info">
+                            <div class="mini_count">70</div>
+                            <div class="mini_messa">Salieron hoy!</div>  
+                        </div>                        
+                    </div>
+                </div>  
+
+                <div class="texto bg-component">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quae officiis doloremque asperiores et nostrum perferendis sunt facere dolore blanditiis, sint praesentium voluptatum, quod vero hic recusandae perspiciatis ut ducimus illum reprehenderit
                     tenetur pariatur dicta repellat unde. Dolor sit deserunt voluptatibus atque eos assumenda numquam rerum dolorem, provident, a cumque quisquam blanditiis cupiditate reiciendis, veniam velit totam corporis eum. Distinctio nostrum sequi
                     soluta iure excepturi esse autem. Id, itaque reprehenderit illum dignissimos in quam modi iusto neque eveniet, placeat cumque accusamus unde sunt, atque accusantium eaque natus. Ipsum eaque nulla expedita atque quia eum, nobis incidunt
@@ -74,7 +98,7 @@
                     Eveniet explicabo non esse neque modi dolor quasi distinctio saepe.
                 </div>
 
-                <div class="info">
+                <div class="componente bg-component">
                     <table class="table_data">
                         <thead>
                             <th class="table_head">Código</th>
@@ -93,7 +117,7 @@
                                 <td class="table_item">1033</td>
                                 <td class="table_item">Zulma Lisseth</td>
                                 <td class="table_item">Duanes Montoya</td>
-                                <td class="table_item">Reccursos Humanos</td>
+                                <td class="table_item">Recursos Humanos</td>
                             </tr>
                             <tr class="table_row">
                                 <td class="table_item">1034</td>
@@ -105,18 +129,57 @@
                                 <td class="table_item">1035</td>
                                 <td class="table_item">Tito Angel</td>
                                 <td class="table_item">Guevara Cruz</td>
-                                <td class="table_item">Mercadeo</td>
+                                <td class="table_item">Logística</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="info">
+                <div class="grafico bg-component">
                     <canvas id="myChart" width="400" height="200"></canvas>
                 </div>
 
-                <div class="info">
+                <div class="componente bg-component">
                     <img class="imginfo" src="images/paisaje.jpg" alt="paisaje">
+                </div>
+
+                <div class="componente bg-component">
+                    <div class="reg-data">
+                        <h3>Registro de datos</h3>
+                        <div class="groupinputs">
+                            <label class="labelfor" for="nombres">Nombres</label>
+                            <input type="text" id="nombres" name="nombres">
+                            <label class="labelfor" for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos">
+                            <label class="labelfor" for="departamento">Departamento</label>
+                            <input type="text" id="departamento" name="departamento">
+                        </div>
+                        <div class="radio_group">
+                            <label class="radio_container">Empleado Activo
+                                <input type="radio" name="estado">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio_container">Empleado Inactivo
+                                <input type="radio" name="estado">
+                                <span class="checkmark"></span>
+                            </label>
+    
+                        </div>
+                        <div class="select-space">
+                            <label class="deptos"> Departamento
+                                <select class="departamentos">
+                                    <option>Informática</option>
+                                    <option>Recursos Humanos</option>
+                                    <option>Mercadeo</option>
+                                    <option>Logística</option>
+                                </select>
+                            </label>                       
+                        </div>
+                        <div class="btn-space">
+                            <button class="btn btn-fg-color-white btn-bg-color-blue">Enviar datos</button>
+                            <button class="btn">Cancelar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

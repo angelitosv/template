@@ -4,7 +4,7 @@
 
 $(window).on('resize',function(){
     var width = $(window).width(); 
-    $("#main").width(width-180);
+    $("#main").width(width-200);
 });
 
 
@@ -16,10 +16,10 @@ function getChart() {
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Rojo', 'Azul', 'Amarillo', 'Verde', 'Morada', 'Naranja'],
             datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
+                label: '# de Votos',
+                data: [12, 23, 7, 18, 5, 3],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -41,11 +41,22 @@ function getChart() {
         },
         options: {
             scales: {
+                xAxes:[{
+                    ticks: {
+                        fontFamily: "'Open Sans', Helvetica, Arial, sans-serif"    
+                    }
+                }],
                 yAxes: [{
                     ticks: {
+                        fontFamily: "'Open Sans', Helvetica, Arial, sans-serif",
                         beginAtZero: true
                     }
                 }]
+            },
+            legend: {
+                labels: {
+                    fontFamily: "'Open Sans', Helvetica, Arial, sans-serif"
+                }
             }
         }
     });
