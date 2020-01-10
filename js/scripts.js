@@ -2,10 +2,10 @@
 // Redimensionar la segunda columna donde se ubica la info del site
 // utilizando jQuery
 
-$(window).on('resize',function(){
+/* $(window).on('resize',function(){
     var width = $(window).width(); 
     $("#main").width(width-200);
-});
+}); */
 
 
 // Dibujando un Gráfico
