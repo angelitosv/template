@@ -33,8 +33,6 @@
 	font-weight: 400;
 }
 
-@import "compass/css3";
-
 * {
 	margin: 0;
 	padding: 0;
@@ -64,9 +62,11 @@ body {
 	top: 0;
 	left: 0;
 	width: 200px;
-	height: 100%;
+	height: 100vh;
 	background-color: #26316d;
 	padding: 10px 0;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .sbtitle {
@@ -155,8 +155,6 @@ body {
 
 /*****************************************************************/
 /****        [ Inicio de estilos de Barra de usuario ]        ****/
-
-/* .toolbar_container { } */
 
 .toolbar {
 	display: flex;
@@ -386,7 +384,8 @@ body {
 }
 
 .trio {
-	width: 31%;
+	height: 80px;
+	width: 32%;
 	border-radius: 5px;
 	background-color: white;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
@@ -766,6 +765,9 @@ textarea {
 	.fxs {
 		display: none;
 	}
+	.socialbar {
+		display: none;
+	}
 
 	.socialink {
 		font-size: .8em;
@@ -776,20 +778,65 @@ textarea {
 		color: white;
 	}
 
-	.miniback-1 {
-		display: none;
-	}
-	
-	.miniback-2 {
-		display: none;
-	}
-	
-	.minigraph img{
-		display: none;
-	}
-	
 	.sidevalues .minivalue {
 		margin-top: 4px;
 		font-size: 1em;
+	}
+
+	@media all and (max-width: 740px) {
+
+		.sidevalues .minivalue {
+			font-size: 1.3em;
+		}
+		
+		.trio .mini_info .mini_messa {
+			font-size: .8em;
+		}
+		
+		.minigraph img{
+			display: none;
+		} 
+	}
+	
+	@media all and (max-width: 630px) {
+
+		.tribox {
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.trio {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		
+		.trio:last-child {
+			margin-bottom: 0;
+		}
+
+
+		.sidevalues .minivalue {
+			font-size: 1.5em;
+		}
+		
+		.trio .mini_info .mini_messa {
+			font-size: 1em;
+		}
+		
+		.minigraph img{
+			display: flex;
+		}
+
+		.toolbaritem {
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.toolbarlink {
+			width: auto;
+
+		}
 	}
 }
