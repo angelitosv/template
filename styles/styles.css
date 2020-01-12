@@ -70,9 +70,6 @@ body {
 }
 
 .sbtitle {
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 12px;
@@ -695,7 +692,7 @@ textarea {
 /*  <<<<<< Media Query >>>>>>  */
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 910px) {
 	
 	body {
 		padding-top: 85px;
@@ -726,15 +723,31 @@ textarea {
 		align-items: center;
 		justify-content: center;
 	}
+
+	.sidebar {
+		padding: 0;
+		padding-top: 5px;
+	}
 	
-	.sbtitle {
-		height: 20px;
+	.sidebar .container-img img {
+		display: none;
+	}
+
+	.sidebar .container-img {
+		background: url("../images/icon_acopatt_small_png.png") no-repeat center;
+		width: auto;
+		height: 72px;	
+		margin-bottom: 5px;	
 	}
 
 	.menuitem {
 		padding: 10px;
 		display: flex;
 		justify-content: center;
+	}
+
+	.menuitem:first-child {
+		border-top: none;
 	}
 	
 	.menulink {
