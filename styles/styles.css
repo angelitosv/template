@@ -67,6 +67,7 @@ body {
 	padding: 10px 0;
 	overflow-x: hidden;
 	overflow-y: auto;
+	transition: all .3s ease;
 }
 
 .sbtitle {
@@ -131,6 +132,7 @@ body {
 	margin-left: 200px;
 	position: relative;
 	color: #666;
+	transition: all .3s ease;
 }
 
 .header {
@@ -144,6 +146,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
+	z-index: 500;
 }
 
 .header_title {
@@ -696,15 +699,17 @@ textarea {
 	body {
 		padding-top: 85px;
 	}
-	
+
 	.main {
 		width: calc(100% - 80px);
 		margin-left: 80px;
+		transition: all .3s ease;
 	}
-
+	
 	.sidebar {
 		width: 80px;
 		height: 100%;
+		transition: all .3s ease;
 	}
 
 
