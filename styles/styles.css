@@ -80,7 +80,6 @@ body {
 }
 
 .menuitem {
-  padding: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
@@ -92,7 +91,10 @@ body {
 .menulink {
   font-weight: 600;
   color: #bdb8d7;
-  margin-left: 15px;
+}
+
+.menulink {
+  padding: 20px 25px;
   display: block;
 }
 
@@ -295,29 +297,27 @@ body {
 /*******************************************************/
 /****      [ Inicio de estilos de Componente ]      ****/
 
-.tribox {
+.info-box {
   height: 80px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
 }
 
-.trio {
-  height: 80px;
-  width: 32%;
-  border-radius: 10px;
+.formatbox {
+  width: 31%;
   background-color: #fff;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   display: flex;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  align-content: space-between;
 }
 
 .sidevalues {
   color: black;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  width: 60%;
 }
 
 .minititle {
@@ -326,7 +326,7 @@ body {
   font-size: 0.8em;
   font-weight: lighter;
   padding-left: 10px;
-  padding-top: 8px;
+  padding-top: 13px;
 }
 
 .minivalue {
@@ -342,19 +342,16 @@ body {
   display: flex;
   height: 80px;
   width: 40%;
-  align-items: center;
 }
 
 .mini_icon {
   width: 30%;
-  height: 80px;
   color: white;
   padding: 15px 0;
   font-size: 2.5em;
   text-align: center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .mini_info {
@@ -608,7 +605,9 @@ textarea {
   box-shadow: 0 0 2px rgba(5, 5, 5, 0.6);
 }
 
-/*  <<<<<< Media Query >>>>>>  */
+/*  <<<<<<<<<<<<<<<<<<<<<<<<<< =========== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/*  <<<<<<<<<<<<<<<<<<<<<<<<<< Media Query >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/*  <<<<<<<<<<<<<<<<<<<<<<<<<< =========== >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
 
 @media all and (max-width: 910px) {
   body {
@@ -659,7 +658,6 @@ textarea {
   }
 
   .menuitem {
-    padding: 10px;
     display: flex;
     justify-content: center;
   }
@@ -668,8 +666,12 @@ textarea {
     border-top: none;
   }
 
+  .menuitem .menulink .menudesc {
+    display: none;
+  }
+
   .menulink {
-    padding: 0;
+    padding: 12px 18px;
     margin: 0;
     text-align: center;
     font-weight: lighter;
@@ -708,7 +710,7 @@ textarea {
     font-size: 1.3em;
   }
 
-  .trio .mini_info .mini_messa {
+  .formatbox .mini_info .mini_messa {
     font-size: 0.8em;
   }
 
@@ -718,19 +720,19 @@ textarea {
 }
 
 @media all and (max-width: 680px) {
-  .tribox {
+  .info-box {
     height: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .trio {
+  .formatbox {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
   }
 
-  .trio:last-child {
+  .formatbox:last-child {
     margin-bottom: 0;
   }
 
@@ -738,7 +740,7 @@ textarea {
     font-size: 1.5em;
   }
 
-  .trio .mini_info .mini_messa {
+  .formatbox .mini_info .mini_messa {
     font-size: 1em;
   }
 
